@@ -40,6 +40,11 @@ describe("GamerTag tests suites - isValidGamerTag", () => {
         expect(result).toEqual(true);
     });
 
+    test("should return false as the label does not contain  a number", () => {
+        const result = isValidGamerTag("br@himmmmm");
+        expect(result).toEqual(false);
+    });
+
 
     
 });
