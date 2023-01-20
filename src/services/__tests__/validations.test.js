@@ -35,6 +35,11 @@ describe("GamerTag tests suites - isValidGamerTag", () => {
         expect(result).toEqual(false);
     });
 
+    test("should return true as the label does contain a special character", () => {
+        const result = isValidGamerTag("br@himmmmmm");
+        expect(result).toEqual(true);
+    });
+
 
     
 });
