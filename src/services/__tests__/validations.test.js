@@ -25,6 +25,11 @@ describe("GamerTag tests suites - isValidGamerTag", () => {
         expect(result).toEqual(false);
     });
 
+    test("should return false as the label contains less than 8 characters", () => {
+        const result = isValidGamerTag("brahim");
+        expect(result).toEqual(false);
+    });
+
 
     
 });
